@@ -1,4 +1,4 @@
-# IPL Win Probability Predictor
+# IPL Win Prediction
 
 ## Project Overview
 
