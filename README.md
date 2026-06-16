@@ -59,8 +59,8 @@ ipl-win-predictor/
 ├── models/
 │   └── pipe.pkl
 │
-└── assets/
-    └── screenshots/
+└── report/
+    └── figures/
 
 ```
 
