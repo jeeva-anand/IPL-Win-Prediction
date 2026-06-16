@@ -10,17 +10,17 @@ The **IPL Match Winner Prediction** project is a Machine Learning application th
 
 The project demonstrates the complete Machine Learning pipeline, from data preprocessing and model training to deployment as an interactive web application using Streamlit.
 
-#  Problem Statement
+## Problem Statement
 
 Predicting the outcome of a cricket match during live gameplay is a challenging task due to multiple influencing factors such as team strength, venue conditions, target score, run rate, and wickets remaining.
 
 The objective of this project is to build a machine learning model capable of estimating the winning probability of a team during an IPL match using historical data and real-time match information.
 
-![alt text](./assets/screenshots/IPL%20win%20prediction.png)
+![alt text](./assets/screenshots/IPL-win-prediction.png)
 
 
 
-#  Objectives
+## Objectives
 
 * Analyze historical IPL match data.
 * Perform data preprocessing and feature engineering.
@@ -30,7 +30,7 @@ The objective of this project is to build a machine learning model capable of es
 * Deploy the application using Streamlit Cloud.
 
  
-# Project Structure
+## Project Structure
 
 ```
 
@@ -65,9 +65,9 @@ ipl-win-predictor/
 ```
 
 
-#  Setup Instructions
+##  Setup Instructions
 
-## 1. Clone the Repository
+### 1. Clone the Repository
 
 ```bash
 git clone https://github.com/jeeva-anand/IPL-Win-Prediction
@@ -79,7 +79,7 @@ cd IPL-Match-Winner-Prediction
 
  
 
-## 2. Create a Virtual Environment
+### 2. Create a Virtual Environment
 
 ### Windows
 
@@ -97,7 +97,7 @@ source venv/bin/activate
 
  
 
-## 3. Install Dependencies
+### 3. Install Dependencies
 
 ```bash
 pip install -r requirements.txt
@@ -105,7 +105,7 @@ pip install -r requirements.txt
 
  
 
-## 4. Run the Streamlit Application
+### 4. Run the Streamlit Application
 
 ```bash
 streamlit run app.py
@@ -115,7 +115,7 @@ The application will open automatically in your browser.
 
  
 
-#  Project Workflow
+##  Project Workflow
 
 1. Importing Necessary Libraries
 2. Loading the IPL Dataset
@@ -128,7 +128,7 @@ The application will open automatically in your browser.
 9. Deploying the Application
 
 
-#  Features Used for Prediction
+##  Features Used for Prediction
 
 * Batting Team
 * Bowling Team
@@ -143,7 +143,7 @@ The application will open automatically in your browser.
 * Required Run Rate (RRR)
 
 
-#  Machine Learning Models
+##  Machine Learning Models
 
 The project can be implemented using models such as:
 
@@ -156,7 +156,7 @@ The project can be implemented using models such as:
 The best-performing model is saved and used for prediction in the Streamlit application.
 
 
-#  Usage Example
+##  Usage Example
 
 Enter the following details in the web application:
 
@@ -181,7 +181,7 @@ Bowling Team : 28%
 ```
 
 
-#  Technologies Used
+##  Technologies Used
 
 * Python
 * Pandas
@@ -194,7 +194,7 @@ Bowling Team : 28%
 
 
 
-#  Live Demo
+##  Live Demo
 
 Replace with your deployed Streamlit URL.
 
@@ -204,7 +204,7 @@ https://ipl-win-prediction-2k25.streamlit.app/
 ```
 
 
-#  Future Enhancements
+##  Future Enhancements
 
 * Incorporate player-level statistics and recent form.
 * Include weather and pitch conditions.
