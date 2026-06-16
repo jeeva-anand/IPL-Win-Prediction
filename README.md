@@ -1,5 +1,9 @@
 # IPL Win Probability Predictor
 
+
+
+![Header](./assets/screenshots/ipl-banner.jpg)
+
 ## Project Overview
 
 IPL Win Probability Predictor is a machine learning application that predicts the winning probability of teams during live IPL matches. Using historical IPL data and match-specific features, the model provides real-time win probability estimates based on the current state of the game.
