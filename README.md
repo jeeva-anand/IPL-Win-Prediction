@@ -212,3 +212,7 @@ https://ipl-win-prediction-2k25.streamlit.app/
 * Integrate live IPL score APIs for real-time prediction updates.
 * Deploy on cloud platforms with continuous updates.
 
+
+# If you like this project
+
+Feel free to star ⭐ the repository and contribute improvements!
