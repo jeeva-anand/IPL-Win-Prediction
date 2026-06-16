@@ -3,13 +3,34 @@
 
 ![Header](./assets/screenshots/banner.png)
 
-## Project Overview
 
-IPL Win Probability Predictor is a machine learning application that predicts the winning probability of teams during live IPL matches. Using historical IPL data and match-specific features, the model provides real-time win probability estimates based on the current state of the game.
+##  Project Description
 
-![alt text](assets/screenshots/image.png)
+The **IPL Match Winner Prediction** project is a Machine Learning application that predicts the winning probability of an Indian Premier League (IPL) cricket match based on the current match situation. The model uses historical IPL match data and match statistics such as batting team, bowling team, venue, current score, wickets lost, overs completed, and target score to estimate the likelihood of each team winning.
 
-## Project Structure
+The project demonstrates the complete Machine Learning pipeline, from data preprocessing and model training to deployment as an interactive web application using Streamlit.
+
+#  Problem Statement
+
+Predicting the outcome of a cricket match during live gameplay is a challenging task due to multiple influencing factors such as team strength, venue conditions, target score, run rate, and wickets remaining.
+
+The objective of this project is to build a machine learning model capable of estimating the winning probability of a team during an IPL match using historical data and real-time match information.
+
+![alt text](./assets/screenshots/IPL%20win%20prediction.png)
+
+
+
+#  Objectives
+
+* Analyze historical IPL match data.
+* Perform data preprocessing and feature engineering.
+* Train and compare machine learning models for prediction.
+* Evaluate model performance using classification metrics.
+* Develop an interactive web application for live match winner prediction.
+* Deploy the application using Streamlit Cloud.
+
+ 
+# Project Structure
 
 ```
 
@@ -31,7 +52,6 @@ ipl-win-predictor/
 │   └── experimentation.ipynb
 │
 ├── src/
-│   ├── __init__.py
 │   ├── preprocess.py
 │   ├── model_training.py
 │   └── helper.py
@@ -44,61 +64,151 @@ ipl-win-predictor/
 
 ```
 
-## Key Features
 
-### Exploratory Data Analysis (EDA)
+#  Setup Instructions
 
-* Analyzed historical IPL match data to identify trends and factors influencing match outcomes.
-* Explored team performance, venue statistics, and match-winning patterns.
-* Visualized distributions and relationships between key match variables.
+## 1. Clone the Repository
 
-### Data Preprocessing
+```bash
+git clone https://github.com/jeeva-anand/IPL-Win-Prediction
+```
 
-* Cleaned and transformed raw IPL datasets.
-* Handled missing values and irrelevant features.
-* Prepared match-level data for machine learning modeling.
+```bash
+cd IPL-Match-Winner-Prediction
+```
 
-### Feature Engineering
+ 
 
-* Created match-specific features such as:
+## 2. Create a Virtual Environment
 
-  * Runs required
-  * Balls remaining
-  * Current run rate (CRR)
-  * Required run rate (RRR)
-  * Wickets remaining
-  * Batting and bowling teams
-  * Host venue
+### Windows
 
-### Train-Test Split
+```bash
+python -m venv venv
+venv\Scripts\activate
+```
 
-* Split the dataset into training and testing sets to evaluate model generalization and prevent overfitting.
+### Linux/Mac
 
-### Machine Learning Model Development
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
 
-* Implemented and trained machine learning models to predict match outcomes.
-* Evaluated model performance using appropriate classification metrics.
-* Selected the best-performing model for deployment.
+ 
 
-### Web Application Development
+## 3. Install Dependencies
 
-* Built an interactive Streamlit application for real-time IPL win probability prediction.
-* Designed a user-friendly interface allowing users to input live match conditions and receive instant predictions.
+```bash
+pip install -r requirements.txt
+```
 
-### Deployment
+ 
 
-* Deployed the application on Streamlit Community Cloud.
-* Enabled public access for real-time prediction and demonstration.
+## 4. Run the Streamlit Application
 
-## Technologies Used
+```bash
+streamlit run app.py
+```
 
-Python, Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn, Streamlit
+The application will open automatically in your browser.
 
-## Outcomes
+ 
 
-* Developed an end-to-end machine learning solution for sports analytics.
-* Generated real-time win probability predictions for IPL matches.
-* Demonstrated expertise in data preprocessing, feature engineering, machine learning, web application development, and deployment.
+#  Project Workflow
 
-This format is professional, recruiter-friendly, and aligns well with GitHub portfolio standards. It focuses on the **problem, methodology, features, deployment, and outcome** rather than just listing notebook steps.
+1. Importing Necessary Libraries
+2. Loading the IPL Dataset
+3. Exploratory Data Analysis (EDA)
+4. Data Preprocessing
+5. Splitting Data into Training and Testing Sets
+6. Machine Learning Model Implementation
+7. Model Evaluation
+8. Building the Streamlit Application
+9. Deploying the Application
+
+
+#  Features Used for Prediction
+
+* Batting Team
+* Bowling Team
+* Venue
+* Target Score
+* Current Score
+* Overs Completed
+* Wickets Lost
+* Runs Required
+* Balls Remaining
+* Current Run Rate (CRR)
+* Required Run Rate (RRR)
+
+
+#  Machine Learning Models
+
+The project can be implemented using models such as:
+
+* Logistic Regression
+* Random Forest Classifier
+* Decision Tree
+* XGBoost
+* Gradient Boosting
+
+The best-performing model is saved and used for prediction in the Streamlit application.
+
+
+#  Usage Example
+
+Enter the following details in the web application:
+
+* Batting Team
+* Bowling Team
+* Host Stadium
+* Target Score
+* Current Score
+* Overs Completed
+* Wickets Lost
+
+Click **Predict Probability** to view the winning chances for both teams.
+
+Example Output:
+
+```
+Winning Probability
+
+Batting Team : 72%
+
+Bowling Team : 28%
+```
+
+
+#  Technologies Used
+
+* Python
+* Pandas
+* NumPy
+* Scikit-learn
+* Matplotlib
+* Streamlit
+* Pickle
+* Jupyter Notebook
+
+
+
+#  Live Demo
+
+Replace with your deployed Streamlit URL.
+
+```
+https://ipl-win-prediction-2k25.streamlit.app/
+
+```
+
+
+#  Future Enhancements
+
+* Incorporate player-level statistics and recent form.
+* Include weather and pitch conditions.
+* Use deep learning models for improved predictions.
+* Integrate live IPL score APIs for real-time prediction updates.
+* Deploy on cloud platforms with continuous updates.
 
