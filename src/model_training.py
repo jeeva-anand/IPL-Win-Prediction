@@ -1,5 +1,4 @@
 import pickle
-
 from sklearn.compose import ColumnTransformer
 from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import train_test_split
@@ -9,6 +8,8 @@ from preprocess import preprocess_data
 
 
 df = preprocess_data()
+
+print(df.head())
 
 X = df.drop('result', axis=1)
 y = df['result']
@@ -35,6 +36,6 @@ pipe = Pipeline([
 
 pipe.fit(X_train, y_train)
 
-pickle.dump(pipe, open('models/pipe.pkl', 'wb'))
+pickle.dump(pipe, open('../models/model.pkl', 'wb'))
 
 print("Model saved successfully")
