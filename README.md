@@ -1,7 +1,7 @@
 # IPL Win Prediction
 
 
-![Header](./assets/screenshots/banner.png)
+![Header](./reports/figures/banner.png)
 
 
 ##  Project Description
