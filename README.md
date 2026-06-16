@@ -57,7 +57,7 @@ ipl-win-predictor/
 │   └── helper.py
 │
 ├── models/
-│   └── pipe.pkl
+│   └── model.pkl
 │
 └── report/
     └── figures/
