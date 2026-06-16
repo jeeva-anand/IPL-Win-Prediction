@@ -196,7 +196,7 @@ Bowling Team : 28%
 
 ##  Live Demo
 
-Replace with your deployed Streamlit URL.
+Deployed Streamlit URL.
 
 ```
 https://ipl-win-prediction-2k25.streamlit.app/
